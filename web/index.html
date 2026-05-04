@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer your Template questions live!</title>
+    <link rel="stylesheet" href="/styles.css?v=3" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="page-hero">
+        <h1 class="page-title">Answer your template questions live!</h1>
+      </section>
+      <section class="workspace">
+        <div class="chat-frame">
+          <div class="panel chat-panel">
+            <div class="panel-header">
+              <div class="bot-brand">
+                <div class="bot-avatar">LB</div>
+                <div>
+                  <h2>LeadBot</h2>
+                  <p class="bot-status"><span class="online-dot"></span>Online Now</p>
+                </div>
+              </div>
+              <div class="header-actions">
+                <button type="button" class="ghost-action" aria-label="More options">...</button>
+                <button type="button" class="ghost-action" aria-label="Close widget">×</button>
+              </div>
+            </div>
+
+            <div class="assistant-intro">
+              <p class="intro-label">LeadBot</p>
+              <div class="intro-bubble-stack">
+                <h3 id="welcome-title"></h3>
+                <p id="welcome-message"></p>
+              </div>
+              <div id="suggestion-bar" class="suggestion-bar"></div>
+              <p id="assistant-status" class="assistant-status"></p>
+            </div>
+
+            <div id="chat-log" class="chat-log"></div>
+
+            <form id="chat-form" class="chat-form">
+              <div class="composer-row">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="1"
+                  placeholder="Reply to LeadBot..."
+                ></textarea>
+                <button type="submit" class="send-button" aria-label="Send">↑</button>
+              </div>
+            </form>
+
+            <p class="brand-footer">We&apos;re ⚡ by Drift</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js?v=3"></script>
+  </body>
+</html>
